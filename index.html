@@ -24,41 +24,41 @@
 		<div id="spacing1" style="height: 20px;"> </div>
 		<div id='options' class='tab' style='display:none; text-align:center'>
 			<div id='savingstuff'>
-				<button id="saveButton" onclick="save()" class="button">Save Game</button>
-				<button id="clearSave" onclick="clearSave()" class="buttonlocked">Clear Save</button>
-				<button id="exportButton" onclick="exportSave()" class="button">Export Save</button>
-				<button id="importButton" onclick="importSave()" class="button">Import Save</button>
-				<button id="displaySave" onclick="displaySave()" class="button">Display Save</button>
+				<button id="saveButton" onclick="save()" class="button">保存遊戲</button>
+				<button id="clearSave" onclick="clearSave()" class="buttonlocked">清除存檔</button>
+				<button id="exportButton" onclick="exportSave()" class="button">導出存檔</button>
+				<button id="importButton" onclick="importSave()" class="button">導入存檔</button>
+				<button id="displaySave" onclick="displaySave()" class="button">顯示存檔</button>
 			</div>
-			<div>Choose your Notation</div>
+			<div>選擇你的數據方法</div>
 			<div id='notationstuff'>
-				<button id="stand" onclick="player.notation = 'Standard'" class="button">Standard</button>
-				<button id="sci" onclick="player.notation = 'Scientific'" class="button">Scientific</button>
-				<button id="mixsci" style="display:none" class="buttonlocked">Mixed Scientific</button>
-				<button id="engin" onclick="player.notation = 'Engineering'" class="button">Engineering</button>
-				<button id="mixengin" style="display:none" class="buttonlocked">Mixed Engineering</button>
-				<button id="hypersci" onclick="player.notation = 'Hyperscientific'" class="button">Hyperscientific</button>
+				<button id="stand" onclick="player.notation = 'Standard'" class="button">標準</button>
+				<button id="sci" onclick="player.notation = 'Scientific'" class="button">科學</button>
+				<button id="mixsci" style="display:none" class="buttonlocked">混合科學</button>
+				<button id="engin" onclick="player.notation = 'Engineering'" class="button">工程</button>
+				<button id="mixengin" style="display:none" class="buttonlocked">混合工程</button>
+				<button id="hypersci" onclick="player.notation = 'Hyperscientific'" class="button">超科學</button>
 				<button id="aas" class="buttonlocked">AAS</button>
 			</div>
 			<div>
-				<button id="tet" style="display:none" class="buttonlocked">Tetration</button>
-				<button id="log" class="buttonlocked">Logarithm</button>
+				<button id="tet" style="display:none" class="buttonlocked">迭代冪次</button>
+				<button id="log" class="buttonlocked">對數</button>
 				<button id="psi" style="display:none" class="buttonlocked">Psi</button>
-				<button id="hex" onclick="player.notation = 'Hexadecimal'" class="button">Hexadecimal</button>
-				<button id="infinity" class="buttonlocked">Infinity</button>
+				<button id="hex" onclick="player.notation = 'Hexadecimal'" class="button">十六進制</button>
+				<button id="infinity" class="buttonlocked">無限</button>
 				<button id="af5ln" onclick="player.notation = 'AF5LN'" class="button">AF5LN</button>
 			</div>
 			<div>
-				<button id="letters" onclick="player.notation = 'Letters'" class="button">Letters</button>
-				<button id="country" onclick="player.notation = 'Country Codes'" class="button">Country Codes</button>
-				<button id="brackets" onclick="player.notation = 'Brackets'" class="button">Brackets</button>
-				<button id="greek" onclick="player.notation = 'Greek'" class="button">Greek</button>
-				<button id="iroha" style="display:none" class="buttonlocked">Iroha</button>
-				<button id="emojis" onclick="player.notation = 'Emojis'" class="button">Emojis</button>
+				<button id="letters" onclick="player.notation = 'Letters'" class="button">字母</button>
+				<button id="country" onclick="player.notation = 'Country Codes'" class="button">國家碼</button>
+				<button id="brackets" onclick="player.notation = 'Brackets'" class="button">括號</button>
+				<button id="greek" onclick="player.notation = 'Greek'" class="button">希臘</button>
+				<button id="iroha" style="display:none" class="buttonlocked">伊呂波</button>
+				<button id="emojis" onclick="player.notation = 'Emojis'" class="button">Emoji</button>
 			</div>
 		</div>
 		<div id='generators' class='tab' style='display:block'>
-			<p>You have <span id="points">0</span> points</p>
+			<p>你擁有<span id="points">0</span>點</p>
 			<button onclick="player.points=player.points.plus(1)" class="button">Get points</button>
 			<table style="width:100%">
 				<tbody id="parent">
