@@ -11,15 +11,15 @@
 		<title>幾何放置 - Geometry Idle</title>
 	</head>
 	<body onload="startInterval()">
-		<button id="options" onclick="showTab('options')" class="button">Options</button>
-		<button id="genTab" onclick="showTab('generators')" class="button">Point Generators</button>
-		<button id="lineSegTab" onclick="showTab('lineSegUpgrades')" class="button" style="display:none">Line Segments</button>
-		<button id="dotTab" onclick="showTab('dotGenerators')" class="button" style="display:none">Dot Generators</button>
-		<button id="lineTab" onclick="showTab('lineTab')" class="button" style="display:none">Line Tree</button>
+		<button id="options" onclick="showTab('options')" class="button">選項</button>
+		<button id="genTab" onclick="showTab('generators')" class="button">點生產器</button>
+		<button id="lineSegTab" onclick="showTab('lineSegUpgrades')" class="button" style="display:none">線段</button>
+		<button id="dotTab" onclick="showTab('dotGenerators')" class="button" style="display:none">細點生產器</button>
+		<button id="lineTab" onclick="showTab('lineTab')" class="button" style="display:none">直線樹</button>
 		<div id='displayedSave' class="popup" style="display:none">
-			<div id='savePlace'> Save Goes Here
+			<div id='savePlace'>存檔在這裏
 			</div>
-			<button id="closeSaveWindow" onclick="document.getElementById('displayedSave').style.display='none'" class="button">Close</button>
+			<button id="closeSaveWindow" onclick="document.getElementById('displayedSave').style.display='none'" class="button">關閉</button>
 		</div>
 		<div id="spacing1" style="height: 20px;"> </div>
 		<div id='options' class='tab' style='display:none; text-align:center'>
