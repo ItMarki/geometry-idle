@@ -285,8 +285,8 @@ function update() { //This is SUCH an ugly function. I will split it up into sec
 		let dstr = "dotTier" + i + "Amount";
 		document.getElementById(str).innerHTML = formatValue(player.notation, player["tier" + i].amount, 3, 0);
 		document.getElementById(dstr).innerHTML = formatValue(player.notation, player["dotTier" + i].amount, 3, 0);
-		document.getElementById("buy" + i).innerHTML = "Cost: " + formatValue(player.notation, player["tier" + i].cost, 3, 0);
-		document.getElementById("buyDot" + i).innerHTML = "Cost: " + formatValue(player.notation, player["dotTier" + i].cost, 3, 0) + " line segments";
+		document.getElementById("buy" + i).innerHTML = "成本: " + formatValue(player.notation, player["tier" + i].cost, 3, 0);
+		document.getElementById("buyDot" + i).innerHTML = "成本: " + formatValue(player.notation, player["dotTier" + i].cost, 3, 0) + " line segments";
 		document.getElementById("mult" + i).innerHTML = "x" + formatValue(player.notation, getGenMult(i), 3, 3);
 		document.getElementById("dotMult" + i).innerHTML = "x" + formatValue(player.notation, getDotMult(i),3, 3);
 		if(canBuyGen(i)) { //If you can buy a generator, the button will change
@@ -472,12 +472,12 @@ function exportSave() { //Saving something to the clipboard is a Mess.
 	alert("Save copied to clipboard"); //Tell the player it all worked
 }
 function importSave() { //Allow the player to import a save file. This is also where "secret codes" will go.
-	var imp = prompt("Paste your save file here");
-	if(imp==null) alert("That save file doesn't work, sorry.");
+	var imp = prompt("請在這裏複製你的存檔");
+	if(imp==null) alert("那存檔不行，對不起。");
 	else player = stringToSave(JSON.parse(imp), getDefaultSave());
 }
 function clearSave() { //Deletes the player save and clears the local storage.
-	if (confirm("This is not reversible. Delete your save file?")) {
+	if (confirm("此動作不能覆還。要確定刪除你的存檔？")) {
 		localStorage.removeItem("geometryIdleSave");
 		player = getDefaultSave();
 		save();
